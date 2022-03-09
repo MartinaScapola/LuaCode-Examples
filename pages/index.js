@@ -1,6 +1,7 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
@@ -11,33 +12,29 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to Lua Code!
-        </h1>
+        <h1 className={styles.title}>Welcome to Lua Code!</h1>
 
-        <br/>
+        <br />
 
         <div className={styles.grid}>
-          <a href="https://lua-code-examples.vercel.app/skillex" className={styles.card}>
-            <h2> Skillex &rarr;</h2>
-            <p> First layout of the training.</p>
-          </a>
+          <Link href="/skillex">
+            <a className={styles.card}>
+              <h2> Skillex &rarr;</h2>
+              <p> First layout of the training.</p>
+            </a>
+          </Link>
         </div>
       </main>
 
       <footer className={styles.footer}>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://twitter.com/marscapola"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span> 
-          {' '} with love
+          Made with love by @marscapola
         </a>
       </footer>
     </div>
-  )
+  );
 }

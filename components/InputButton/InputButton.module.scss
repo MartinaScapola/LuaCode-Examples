@@ -1,0 +1,10 @@
+.inputButton {
+  background: white;
+  border: 0;
+  padding: 15px;
+  border-radius: 10px;
+
+  &.large {
+    padding: 30px;
+  }
+}
